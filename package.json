@@ -1,6 +1,6 @@
 {
   "name": "@bitsmist-js_v1/nodejs",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "BitsmistJS NodeJS runner",
   "main": "src/index.js",
   "type": "module",
@@ -9,8 +9,8 @@
     "jsdom": "^22.1.0"
   },
   "scripts": {
-	  "debug": "NODE_ENV=debug node ./app",
-	  "prod": "NODE_ENV=production node ./app"
+    "debug": "NODE_ENV=debug node ./app",
+    "prod": "NODE_ENV=production node ./app"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
   ],
   "files": [
     "src",
-	"index.html"
+    "index.html"
   ],
   "author": "Masaki Yasutake <my17560@gmail.com>",
   "license": "MIT",
