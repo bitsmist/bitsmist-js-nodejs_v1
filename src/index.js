@@ -12,5 +12,13 @@ globalThis.CustomEvent = window.CustomEvent;
 globalThis.XMLHttpRequest = window.XMLHttpRequest;
 globalThis.crypto = crypto;
 
-await import("@bitsmist-js_v1/core");
+if (process.env.NODE_ENV === "production")
+{
+	await import("@bitsmist-js_v1/core");
+}
+else
+{
+	await import("@bitsmist-js_v1/core/debug");
+}
+
 document.documentElement.innerHTML = readFileSync("index.html");
