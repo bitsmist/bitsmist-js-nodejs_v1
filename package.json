@@ -8,6 +8,10 @@
     "@bitsmist-js_v1/core": "^0.12.0",
     "jsdom": "^22.1.0"
   },
+  "scripts": {
+	  "debug": "NODE_ENV=debug node ./app",
+	  "prod": "NODE_ENV=production node ./app"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bitsmist/bitsmist-js-nodejs_v1.git"
